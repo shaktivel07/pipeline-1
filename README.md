@@ -1,5 +1,14 @@
 # Enterprise Data Engineering Pipeline on Azure Databricks
 
+![Azure Databricks](https://img.shields.io/badge/Azure-Databricks-blue)
+![Apache Spark](https://img.shields.io/badge/Apache-Spark-orange)
+![Delta Lake](https://img.shields.io/badge/Delta-Lake-green)
+![DLT](https://img.shields.io/badge/Delta-Live%20Tables-purple)
+![Auto Loader](https://img.shields.io/badge/Auto-Loader-blue)
+![ADLS Gen2](https://img.shields.io/badge/ADLS-Gen2-lightblue)
+![SCD Type 2](https://img.shields.io/badge/SCD-Type%202-red)
+
+
 ## Overview
 
 This project implements an end-to-end **Modern Data Engineering Pipeline** using the **Medallion Architecture (Bronze, Silver, Gold)** on **Azure Databricks**.
