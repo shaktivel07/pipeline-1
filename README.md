@@ -27,6 +27,8 @@ The architecture follows industry-standard Data Engineering practices used in en
 
 ## Technology Stack
 
+<img src="images/tech_stack.png" width="900">
+
 | Category                  | Technology                   |
 | ------------------------- | ---------------------------- |
 | Cloud Platform            | Microsoft Azure              |
@@ -69,90 +71,7 @@ shakthi_projects/
 
 ## Medallion Layers
 
-### Bronze Layer
-
-The Bronze layer is responsible for ingesting raw source data from Azure Data Lake Storage.
-
-#### Features
-
-* Auto Loader based ingestion
-* Incremental file processing
-* Schema inference
-* Structured Streaming
-* Checkpoint management
-* Raw data preservation
-
-#### Input Datasets
-
-* Customers
-* Products
-* Orders
-* Regions
-
----
-
-### Silver Layer
-
-The Silver layer performs data quality improvements and business transformations.
-
-#### Customers
-
-* Standardization
-* Data validation
-* Delta format conversion
-
-#### Products
-
-* Product transformations
-* Discount calculations
-* Business rule implementation
-* Custom SQL functions
-
-#### Orders
-
-* Data cleansing
-* Transaction processing
-* Window-based transformations
-
-#### Regions
-
-* Regional data standardization
-* Delta table creation
-
----
-
-### Gold Layer
-
-The Gold layer creates business-ready analytical datasets.
-
-#### DimCustomers
-
-Features:
-
-* Surrogate Key Generation
-* Slowly Changing Dimension Type 2
-* Historical tracking
-* Effective date management
-
-#### DimProducts
-
-Implemented using Delta Live Tables.
-
-Features:
-
-* Streaming dimension updates
-* Data quality expectations
-* SCD Type 2 implementation
-* Incremental processing
-
-#### FactOrders
-
-Features:
-
-* Fact table construction
-* Dimension lookups
-* Incremental MERGE operations
-* Analytical reporting support
+<img src="images/medallian_layers.png" width="900">
 
 ---
 
