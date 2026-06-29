@@ -21,31 +21,7 @@ The architecture follows industry-standard Data Engineering practices used in en
 
 ## Architecture
 
-```text
-Source Layer
-     │
-     ▼
-Azure Data Lake Storage Gen2
-     │
-     ▼
-Bronze Layer
-(Auto Loader + Streaming Ingestion)
-     │
-     ▼
-Silver Layer
-(Data Cleaning & Business Transformations)
-     │
-     ▼
-Gold Layer
-(Dimensional Modeling)
-     │
-     ├── DimCustomers
-     ├── DimProducts
-     └── FactOrders
-     │
-     ▼
-Power BI / Analytics / Reporting
-```
+<img src="images/architecture.png" width="900">
 
 ---
 
